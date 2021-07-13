@@ -3,10 +3,12 @@
     "Application": {
       "IsEnabled": true, // Enables the PTMagic bot (needs restart to take effect)
       "TestMode": false, // If TestMode is active, no properties files will be changed
-      "ProfitTrailerLicense": "YOUR PROFIT TRAILER LICENSE KEY", // Your Profit Trailer license key (needed to change your settings for PT 2.0 and above)
+      "ProfitTrailerLicense": "ptlicense1asdf234fljlasdf014325ehm", // Your Profit Trailer license key (needed to change your settings)
+      "ProfitTrailerLicenseXtra": "", // Licenses for additional bots for PTM to update (optional - comma separated list)
       "ProfitTrailerServerAPIToken": "", //Your Profit Trailer Server API Token
-      "ProfitTrailerMonitorURL": "http://localhost:8081/", // The URL to your profit trailer monitor (needed to change your settings for PT 2.0 and above)
-      "ProfitTrailerDefaultSettingName": "default", // Your Profit Trailer default setting name (needed to change your settings for PT 2.0 and above)
+      "ProfitTrailerMonitorURL": "http://localhost:8081/", // The URL to your profit trailer monitor (needed to change your settings)
+      "ProfitTrailerMonitorURLXtra": "", // URLs for additional bots you want PTM to update (optional  - comma separated list)
+      "ProfitTrailerDefaultSettingName": "default", // Your Profit Trailer default setting name (needed to change your settings)
       "Exchange": "Bittrex", // The exchange your are running Profit Trailer on
       "StartBalance": 0, // The balance you had in your wallet when you started working with Profit Trailer
       "TimezoneOffset": "+0:00", // Your timezone offset from UTC time
@@ -19,9 +21,9 @@
     "Monitor": {
       "IsPasswordProtected": true, // Defines if your monitor will be asking to setup a password on its first start
       "OpenBrowserOnStart": false, // If active, a browser window will open as soon as you start the monitor
-      "Port": 5000, // The port you want to run your monitor on
+      "Port": 8080, // The port you want to run your monitor on
       "RootUrl": "/", // The root Url of your monitor
-      "AnalyzerChart":"", // By default the chart on the market analyzer page displays your base currency against USD.  You may change this if you like (eg., BTCEUR)
+      "AnalyzerChart": "", // By default the chart on the Market Analyzer page will use your default currency against USD.  You can change that here. (eg., BTCEUR)
       "GraphIntervalMinutes": 60, // The interval for the monitor market trend graph to draw points
       "GraphMaxTimeframeHours": 24, // This will enable you to define the timeframe that your graph for market trends covers
       "RefreshSeconds": 30, // The refresh interval of your monitor main page

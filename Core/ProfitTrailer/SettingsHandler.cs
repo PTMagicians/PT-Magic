@@ -144,9 +144,8 @@ namespace Core.ProfitTrailer
 
       foreach (string line in pairsLines)
       {
-        if (line.Replace(" ", "").StartsWith("ALL_enabled_pairs", StringComparison.InvariantCultureIgnoreCase) || line.Replace(" ", "").StartsWith("enabled_pairs", StringComparison.InvariantCultureIgnoreCase))
+        if (line.Replace(" ", "").StartsWith("enabled_pairs", StringComparison.InvariantCultureIgnoreCase))
         {
-          result = line.Replace("ALL_enabled_pairs", "", StringComparison.InvariantCultureIgnoreCase);
           result = result.Replace("enabled_pairs", "", StringComparison.InvariantCultureIgnoreCase);
           result = result.Replace("#", "");
           result = result.Replace("=", "").Trim();
